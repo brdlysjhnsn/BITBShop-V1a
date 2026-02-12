@@ -1,39 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content=width="device-width", initial-scale="1.0">
-        <title>BITBShop</title>
-
-        <link rel="stylesheet" href="gdstyle.css"/>
-    </head>
-
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITBShop – Buddy’s Bakery & Bradley’s IT Consulting</title>
+    <link rel="stylesheet" href="gdstyle.css">
+</head>
 <body>
 
-    <h1>Buddy's Site</h1>
-    <h2>The Coolest and Hotest Spot On the Net!</h2>
-    <img src="./BSJ.png" width="200" border="3" align="center"><p>BITB, BITB, BITB! Say BITB Real Fast, IT Sounds Like a Rhythm! Say BITB Again, Say BITB to Everyone!</p>
-    <hr>
-    <div class="bbtan">
-   <h3> <p>"Bradley's Bakery - BB" of BITB!</p></h3>
-    <h3>BITB has Stupid Good Sweets, Pastries, Cakes, Cookies</h3>
-    <a href="./BITBBakery.html">Buddy's Bakery</a>
-        </div>
-    <br>
+    <!-- NAVIGATION -->
+    <header>
+        <div class="logo">BITBShop</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#bakery">Buddy’s Bakery</a>
+            <a href="#it">IT Consulting</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <hr>
-    <div class="ITblue">
-<h3><p>"Information Technology - IT" of BITB!</p>BITB has IT Solutions for Small Businesses and Consumers
-    </h3>
-    <a href="./BITBIT.html">Bradley's IT</a>
-        </div>
-    <hr><hr>
-<br>
-<br>
-    <a href="./MyStuff.html">My stuff</a><br>
-<a href="./Contact.html">Contact Me</a>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>BITBShop</h1>
+        <h2>Buddy’s Bakery & Bradley’s IT Consulting</h2>
+        <p>Quality, reliability, and craftsmanship—whether it’s fresh pastries or rock‑solid technology.</p>
 
+        <div class="hero-buttons">
+            <a href="BITBBakery.html" class="btn primary">Order Bakery Goods</a>
+            <a href="BITBIT.html" class="btn secondary">Request IT Support</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About BITB</h2>
+        <p>
+            BITBShop brings together two lifelong passions under one trusted local brand:
+            <strong>Buddy’s Bakery</strong>, built on decades of artisan baking, and
+            <strong>Bradley’s IT Consulting</strong>, delivering dependable, affordable technology solutions.
+        </p>
+        <p class="philosophy">
+            Do it right. Do it with care. Do it like it matters.
+        </p>
+    </section>
+
+    <!-- BAKERY SECTION -->
+    <section id="bakery" class="division bakery">
+        <h2>Buddy’s Bakery</h2>
+        <p class="tagline">Stupid Good Sweets, Pastries, Cakes & Cookies</p>
+
+        <ul>
+            <li>Artisan pastries and breads</li>
+            <li>Custom cakes for events</li>
+            <li>Cookies, bars, and seasonal specialties</li>
+            <li>Local pickup and special orders</li>
+        </ul>
+
+        <a href="BITBBakery.html" class="btn primary">Explore Bakery Menu</a>
+    </section>
+
+    <!-- IT SECTION -->
+    <section id="it" class="division it">
+        <h2>Bradley’s IT Consulting</h2>
+        <p class="tagline">Reliable, Affordable, Local Tech Support</p>
+
+        <ul>
+            <li>Workstations, laptops, and hardware setup</li>
+            <li>Networks, Wi‑Fi, and small‑business infrastructure</li>
+            <li>Website setup and hosting</li>
+            <li>Troubleshooting and repair</li>
+            <li>Security, backups, and data protection</li>
+        </ul>
+
+        <a href="BITBIT.html" class="btn secondary">View IT Services</a>
+    </section>
+
+    <!-- WHY BITB -->
+    <section class="why">
+        <h2>Why BITB?</h2>
+
+        <table>
+            <tr>
+                <th>What You Get</th>
+                <th>Bakery</th>
+                <th>IT Consulting</th>
+            </tr>
+            <tr><td>Decades of expertise</td><td>✔️</td><td>✔️</td></tr>
+            <tr><td>Local, personal service</td><td>✔️</td><td>✔️</td></tr>
+            <tr><td>Quality you can taste or trust</td><td>✔️</td><td>✔️</td></tr>
+            <tr><td>Fair, transparent pricing</td><td>✔️</td><td>✔️</td></tr>
+            <tr><td>A business built on relationships</td><td>✔️</td><td>✔️</td></tr>
+        </table>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Ready to work with the Best In The Business?</h2>
+
+        <div class="contact-options">
+            <div>
+                <h3>Bakery Orders</h3>
+                <p>Fresh pastries, custom cakes, and sweets made with heart.</p>
+                <button onclick="openForm('bakery')">Order Now</button>
+            </div>
+
+            <div>
+                <h3>IT Support</h3>
+                <p>Reliable tech solutions for your home or business.</p>
+                <button onclick="openForm('it')">Request Service</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>BITBShop – Buddy’s Bakery & Bradley’s IT Consulting</p>
+        <p>Serving the Ozarks with pride, craftsmanship, and care.</p>
+        <p>© 2026 BITBShop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
