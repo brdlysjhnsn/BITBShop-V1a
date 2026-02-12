@@ -1,10 +1,130 @@
-* {
-    text-align:left;
-    background-color:orange;
+/* GLOBAL RESET */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(236, 158, 55); /* Keeps your original vibe */
+    color: #222;
 }
 
+/* HEADINGS */
+h1, h2, h3 {
+    margin: 0 0 10px;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #c72339, #9998eb);
+    color: #222;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    display: inline-block;
+}
+
+.primary {
+    background: #cc5500;
+    color: #fff;
+}
+
+.secondary {
+    background: #3366cc;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* INTRO SECTION */
+.intro {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* DIVISION SECTIONS */
+.division {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* BAKERY COLORS */
+.bbtan {
+    border-left: 6px solid #a1521a;
+}
+
+/* IT COLORS */
+.ITblue {
+    border-left: 6px solid #3366cc;
+}
+
+/* WHY BITB TABLE */
+.why {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    background: #222;
+    color: #fff;
+}
+
+.footer a {
+    color: #ffcc99;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* LISTS */
 li {
-list-style-position: inside;
+    list-style-position: inside;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .division {
+        padding: 20px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
 }
 
 
